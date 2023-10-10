@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> All Tags and attributes</title>
+</head>
+
+<body>
+
+	<h1>TECHNITY</h1>
+	
+	<form action="./index.html" method="post" autocomplete target="_blank">
+		<fieldset>
+			<legend>ADDMISSION FORM</legend>
+
+		<h1>Personal Information</h1>
+
+		<label for="fname">First Name : </label>
+		<input type="text" name="first-name" id="fname" value="salamat" size="50" readonly>
+		
+		<label for="lname">Last Name : </label>
+		<input type="text" id="lname" name="last-name" value="noor" size="50" readonly>
+
+		<br>
+
+		<label for="fatherName">Father Name :</label>
+		<input type="text" id="fatherName" name="father-Name" value="Naseer-Uddin" readonly>
+		
+		<label for="email">Email :</label>
+		<input type="email" id="email" name="email" value="saqiiashiq6@gmail.com" multiple>
+
+		<br>
+		<label for="number">Phone :</label>
+		<input type="tel" id="number" name="Phone-number" value="03165204143" min="1234567891011" max="99999999999"> <br>
+		
+		<label for="address">Address :</label>
+		<input type="text" id="address" name="location" value="enter your location" size="100" maxlength="50">
+
+		<br>
+		<label for="commentOnYourSelf">Write About your Self :</label> <br>
+		<textarea rows="5" cols="50" id="commentOnYourSelf" name="comment" value="Write About your Self :">What are your Interests? "Text area"</textarea><br>
+
+		<label for="commentOnFreelancing"> Why are you intersted in learning freelancing skills?</label><br>
+		<textarea rows="5" cols="50" id="commentOnFreelancing" name="commentOnFreelancing">Write a line on Your Interest in freelancing...</textarea><br>
+		
+		<br>
+		<label for="commentOnExpe">Freelance Experience :</label> <br>
+		<textarea rows="5" cols="50" id="commentOnExpe" name="commentOnExpe">Do you have any prior experience with freelancing?</textarea><br>
+
+		<label for="commentOnExpe"> If so what types of work have you done?</label><br>
+		<textarea rows="5" cols="50" id="commentOnExpe" name="commentOnExpe">If so what types of work have you done?</textarea><br>
+
+		<label for="availiTime">Availability :</label><br>
+		<label for="availiTime">What are your availibility hours?</label>
+		<select name="availiTime" id="availiTime">
+			<option>12pm - 1am</option>
+			<option>1am - 2am</option>
+			<option>2am - 3am</option>
+		</select> <br>
+
+		<label for="courses">Desired Courses :</label>
+		<select name="courses" id="courses">
+			<option value="Web Basics(HTML, CSS, javascript)"> Web Basics(HTML, CSS, javascript)</option>
+			<option> UI/UX Design</option>
+			<option> Wordpress </option>
+			<option> Shopify </option>
+			<option> Wix </option>
+			<option> Prestashop </option>
+			<option> Graphics Design </option>
+			<option> SEO </option>
+			<option> Blogging </option>
+		</select> <br>
+
+		<label for="coursDurat"> Course Duration </label></br>
+		<label for="coursDuratP">The total duration of the courses in 3 months </label><br>
+		<label for="payInfo">Payment Information</label><br>
+		<label for="addFee">Addmission Fee : Rs. 4000 </label><br>
+		<label for="monFee">Monthly Fee : Rs. 6000 </label><br>
+		
+		<hr>
+
+		<label for="bottomWalaName">Name:</label>
+		<input type="text" name="fullName" id="bottomWalaName">
+
+		<label for="bottomWalaFathName">Father Name:</label>
+		<input type="text" name="fatherName" id="bottomWalaFathName">
+		
+		<br>
+		
+		<label for="bottomDate">Date:</label>
+		<input type="date" name="Date" id="bottomDate" min="2022-01-01" max="2022-01-01">
+
+		<label for="batchNo">Batch#:</label>
+		<input type="number" name="batchNo" id="batchNo">
+
+		<br>
+
+		<label for="monthFee"> Monthly Fee:</label>
+		<input type="number" name="monthFee" id="monthFee">
+
+		<label for="addmiFee">Addmission Fee: </label>
+		<input type="number" name="addmifee" id="addmiFee">
+
+		<br>
+
+		<label for="remaining">Remaining</label>
+		<input type="number" name="remaining" id="remaining">	<br><br>
+
+		<h1>Input type Button </h1>
+		<input type="button" value="click Me"> <br><br>
+
+		<h1>Input type Color </h1>
+		<input type="color"> <br><br>
+
+		<h1>Input type date </h1>
+		<input type="date"> <br><br>
+
+		<h1>Input type DateTime </h1>
+		<input type="datetime-local"> <br><br>
+
+		<h1>Input type File </h1>
+		<label for="file"> Choose a File : </label>		
+		<input type="file" name="selectFile" id="file" multiple>	<br><br>
+		
+		<h1>Input type hidden </h1>
+		<label for="hidden">Hidden Input : </label>
+		<input type="hidden" name="hidden" id="hidden">	<br><br>
+	
+		<h1>Input type Month </h1>	
+		<label for="month">Which month is this : ? </label>
+		<input type="month" name="month" id="month">	<br><br>
+	
+		<h1>Input type Password </h1>
+		<label for="passw">Security Key :</label>
+		<input type="password" name="passw" id="passw">	<br><br>
+
+		<h1>Input type Radio </h1>
+		<label for="true">Which is true : </label>
+		<input type="radio" name="true" id="true"> <br><br>
+
+		<h1>Input type Range </h1>
+		<label for="range"> Select Range : </label>
+		<input type="range" name="range" id="range"> <br><br>
+
+		<h1>Input type Search </h1>
+		<label for="search">Search : </label>
+		<input type="search" name="search" id="search"> <br><br>
+		
+		<h1>Input type Tel </h1>
+		<label for="phone">Contact number : </label>
+		<input type="tel" name="phone" id="phone"> <br><br>
+
+		<h1>Input type Time </h1>
+		<label for="time">Time : </lable>
+		<input type="time" name="time" id="time"> <br><br>
+		
+		<h1>Input type URL </h1>
+		<label for="url">Enter a URL : </label>
+		<input type="url" name="website" id="url" value="Enter a URL :" size="50" maxlength="20"> <br><br>
+		
+		<h1>Input type WEEK </h1>
+		<label for="week">Week :</label>
+		<input type="week" name="week" id="week" value="Week :" disabled> <br><br>
+		
+		
+		<input type="submit" disabled>
+		<input type="reset" disabled>
+		<button type="button" disabled>Click me!</button>
+
+		</fieldset>
+	</form>
+
+</body>
+
+</html>

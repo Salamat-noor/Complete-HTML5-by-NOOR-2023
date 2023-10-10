@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            line-height: 55px;
+            counter-reset: main;
+        }
+
+        .one::before{
+            content: "counter " counter(main) ": ";
+            counter-increment: main 1;
+            color: #00ff00;
+            background-color: #151414;
+        }
+
+        header {
+            outline: thin dotted #00ff00;
+        }
+
+        section {
+            outline: medium double #000000;
+        }
+
+        article {
+            outline: thick dashed #ff0000;
+        }
+
+        footer {
+            outline: 7px solid pink;
+        }
+
+        aside {
+            border: 10px groove yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="one">Header</header>
+    <section class="one">Section One</section>
+    <aside class="one">Aside</aside>
+    <section class="one">Section Two</section>
+    <article class="one">Article</article>
+    <footer class="one">Footer</footer>
+</body>
+
+</html>

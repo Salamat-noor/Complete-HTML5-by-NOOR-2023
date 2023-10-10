@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <style>
+        body {
+            text-align: center;
+            line-height: 1.8em;
+            list-style-position: inside;
+            list-style-type: square;
+
+            letter-spacing: 0.2em;
+        }
+
+        h1 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 1000;
+            font-style: oblique;
+            font-size: 110px;
+            line-height: 80vh;
+
+            background: #000000;
+            color: #ffffff;
+        }
+
+        fieldset {
+            border-color: #ff0000;
+            border-top: 8px dashed #ac1919;
+            border-right: 8px dashed blue;
+            border-left: 8px dashed blue;
+            border-bottom: 10px dashed green;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+            background-color: rgba(0, 0, 0, 0.2);
+
+        }
+
+        legend {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            font-size: 45px;
+            font-style: oblique;
+            line-height: 1.0em;
+            border-radius: 100px;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: xx-large;
+            line-height: 1.1em;
+
+            border: 2px inset black;
+            border-radius: 100px;
+        }
+
+        ol {
+            font-size: large;
+            color: antiquewhite;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-family: sans-serif;
+        }
+
+        li {
+            font-weight: 600;
+            line-height: 2.5em;
+        }
+
+        h3 {
+            color: black;
+            font-size: x-large;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        span {
+            color: antiquewhite;
+            font-weight: 500;
+            line-height: 1.9em;
+            border-radius: 5px;
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+
+    <fieldset>
+        <legend>HTML Form</legend>
+        <h2>HTML Input form attributes</h2>
+        <ol>
+            <li>-form Id</li>
+            <li>-formaction</li>
+            <li>-formmethod</li>
+            <li>-formtarget</li>
+            <li>-formenctype</li>
+            <li>-formnovalidate</li>
+        </ol>
+        <h2>HTML Form Attributes</h2>
+        <ol>
+            <li>autocomplete on/of</li>
+            <li>novalidate</li>
+            <li>name</li>
+            <li>action</li>
+            <li>method</li>
+            <li>target</li>
+        </ol>
+        <h2>HTML Form Elements</h2>
+        <ol>
+            <li>Label</li>
+            <li>textarea</li>
+            <li>button</li>
+            <li>input / type</li>
+            <li>input / list</li>
+            <li>output</li>
+            <li>select</li>
+            <li>option</li>
+            <li>option group</li>
+            <li>datalist</li>
+            <li>fieldset</li>
+            <li>legends</li>
+
+        </ol>
+        <h2>Html input types</h2>
+        <ol>
+            <li>input type text</li>
+            <li>input type number</li>
+            <li>input type tel</li>
+            <li>input type email</li>
+            <li>input type password</li>
+            <li>input type color</li>
+            <li>input type radio</li>
+            <li>input type checkbox</li>
+            <li>input type url</li>
+            <li>input type search</li>
+            <li>input type button</li>
+            <li>input type submit</li>
+            <li>input type image</li>
+            <li>input type range</li>
+            <li>input type month</li>
+            <li>input type date</li>
+            <li>input type time</li>
+            <li>input type datetime-local</li>
+            <li>input type file</li>
+            <li>input type reset</li>
+            <li>input type hidden</li>
+        </ol>
+
+        <hr>
+        <h2>HTML input attributes</h2>
+        <ol>
+            <li>VALUE</li>
+            <li>READ ONLY</li>
+            <li>disabled</li>
+            <li>autofocus</li>
+            <li>pattern</li>
+            <li>size</li>
+            <li>min \ minimum</li>
+            <li>max \ maximum</li>
+            <li>maxlength</li>
+            <li>required</li>
+            <li>step</li>
+            <li>width \ height</li>
+            <li>placeholder</li>
+            <li>multiple</li>
+            <li>selected</li>
+            <li>checked</li>
+            <li>list</li>
+            <li>type</li>
+            <li>id</li>
+            <li>name</li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>Details</legend>
+        <h2>HTML input form attributes</h2>
+
+        <h3>formaction attribute</h3>
+        <p>the <span>html input form attribute</span> is the secondary attribute to use in <span>input elements</span>
+            it us useful to attach two pages to the same <span>form</span> we can one <span>action</span>
+            link the form for clients and users and also wwe can link it for ye author or mainUser.For example
+        <form action="http://fb.login">
+            <label for="password">Password</label>
+            <input type="password" name="userpassword" id="password" placeholder="enter password">
+            <input type="submit">
+            <input type="submit" value="submit as user" formaction="www.google.com">
+        </form>
+        </p>
+        <hr>
+
+        <h3>Form Id Attribute</h3>
+        <p>The <span>form Id</span> attribute is useful when a user missed something like an <span>input </span> or any
+            <span>element</span>.we can again add more elements into a one form which is closed before in the page
+            so we can add new elements to the by <span>form Id </span> attribute.For example:
+        <form action="" id="form11">
+            <label for="emails">E-mail:</label>
+            <input type="email" name="email" id="emails" value="example@gmail.com">
+        </form>
+
+        <input type="submit" form="form11">
+        </p>
+        <hr>
+
+        <h3>Form Method Attribute</h3>
+        <p>The <span>formmethod</span> attribute is use to rechange the method of the form when we missed to write the
+            method of the form we can rewrite it in the ,span>input submit</span>
+            button.
+        <form action="" method="">
+            <label for="name">Name :</label>
+            <input type="text" name="username" id="name">
+            <input type="submit" formmethod="post">
+        </form>
+        </p>
+        <hr>
+
+        <h3>Formtarget attribute </h3>
+        <p>The <span>formtarget</span> Attribute is use to opens a form into new browser window or new tab of the
+            browser we can use it in the <span>input submit</span> field.
+            For example :
+        <form>
+            <label for="words">comment :</label>
+            <textarea name="comment" id="words" cols="110" rows="5"></textarea>
+            <input type="submit" formtarget="_blank">
+        </form>
+        </p>
+        <hr>
+
+        <h3>Formenctype attribute</h3>
+        <p>The<span> formenctype</span> attribute is useful when we got a long <span>form</span> like multiple
+            addmission forms then we need add <span>formenctype</span> attribute
+            to collect and <span>submit</span> it all. for example:
+
+        <form action="/action_page_binary.asp" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+        </form>
+
+        </p>
+        <hr>
+
+        <h3>formnovalidate attribute</h3>
+        <p>The <span>formnovalidate</span> Attribute is use to make an <span>element</span> uncheck by servers and it
+            gives the result which is given by the user.
+
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit">
+            <input type="submit" value="Submit" formnovalidate="formnovalidate" value="submit without validate>
+</form>
+</p>
+
+
+        <h2>HTML Form Attributes</h2>
+
+        <h3><span>action</span> attribute and Value of It</h3>
+        <p>In <span>action</span> attribute we use a link or a path where the form will be submitted, when we press the
+            submit button. And it is an attribute of form element.</p>
+        <hr>
+
+        <h3><span>Method</span> Attribute And Values Of It</h3>
+        <p>In <span>method</span> attribute we use two values <span>get</span> and <span>post</span>. We call
+            <span>get</span> method when form is submitted by clients \ or users, it give us all information and data in
+            the <span>url</span> field of any browser. related to the form.
+        </p>
+        <hr>
+
+        <h3><span>Target</span> Attribute And Values Of It</h3>
+        <p><span>target</span> attribute is useful when we need multiple tasks or tabs to use in <span>form</span>
+            element , It makes our <span>form</span> good in the use.
+        </p>
+        <hr>
+
+        <h3><span>novalidate</span> Attribute And Values Of It</h3>
+        <p>The <span>novalidate</span> attribute is use to make the <span>form</span> so simple and un-secure like, it
+            will leave the
+            form as user filled it or not while submitting the empty fields remain empty and simply with
+            <span>novalidate</span>
+            attribute choises became yours in the form.
+        </p>
+        <hr>
+
+        <h3><span>autocomplete</span> Attribute And Values Of It</h3>
+        <p>
+            In <span>autocomplete</span> attribute the user needs to hover and click over <span>input</span> fields and
+            the field automatically avail all data which a user typed earlier in that field when we use
+            <span>autocomplete=" on"</span>
+            the attribute works and with <span>autocomplete="of"</span> the attribute stops working.
+            </p>
+            <hr>
+
+            <h3><span>name</span> attribute</h3>
+            <p>The <span>name</span> attribute is used to name a form we will discuss about this attribute in next
+                session.
+            </p>
+            <hr>
+
+            <h2>HTML Form Elements</h2>
+
+            <h3><span>label</span> Element</h3>
+            <p>
+                The <span>label</span> element is an Element of <span>Form</span> Element, Which is most common used
+                element
+                in <span>forms.</span> without the <span>label</span> element all <span>input</span> fields are useless
+                in
+                HTML forms. for example.
+                <b>
+                    < label for="">
+                        < /label> and then <span>input</span> field
+                </b>
+            </p>
+            <hr>
+
+            <h3><span>textarea</span> Element</h3>
+            <p>
+                The <span>textarea</span> element is use to make small section /or a small comment area to interect
+                users to
+                give us a feedback or any comment.
+                it has multiple attributes like, <span>name</span>,<span>id</span>,<span>cols</span>,<span>rows</span>.
+                and
+                it has a a opening and closing tag.
+            </p>
+            <hr>
+
+            <h3><span>button</span> Element</h3>
+            <p>The <span>Button</span> Element is an element of <span>Form</span> element it used as a button to travel
+                between sections and pages and it has a <span>type</span> attribute called <span>button</span> and much
+                more
+                attributes to modefy it.
+            </p>
+            <hr>
+
+            <h3><span>input</span> Element</h3>
+            <p>The <span>input</span> Element is an element of form element , with this element the <span>form</span>
+                become
+                a more user interactive and with out any <span>input</span> element the form should not called itself a
+                <span> form</span>, and <span>input</span> element have many attributes , we will discuss them out later
+                soon.
+            </p>
+            <hr>
+
+            <h3><span>select</span> Element</h3>
+            <p>The <span>select</span> element is an element of <span>Form</span> element it works like a decisional
+                question, and we also called it a <span>drop-down</span> selectBox. it has also a common useable element
+                called <span>option</span> and <span>optiongroup</span> to make options of it. and we will also discuss
+                about them.
+            </p>
+            <hr>
+
+            <h3><span>option</span> Element</h3>
+            <p>
+                The <span>option</span> element is an element of <span>form</span> <span>select</span> element with out
+                the
+                <span>select</span> element the option element is useless, it has a specific common attribute called
+                <span>value</span> , without <span>value</span> attribute the option tag is useless. And it has a
+                opening
+                and closing tag.
+            </p>
+            <hr>
+
+            <h3><span>optionGroup</span> Element</h3>
+            <p>
+                The <span>optiongroup</span> element groups the options in <span>select</span>,<span>option</span>
+                <span>values</span>, it is useful when a list of options are given in an <span>selcct</span> element.
+                and
+                also it helps to identify the options in the <span>select</span> element.
+            </p>
+            <hr>
+
+            <h3><span>input list</span> Element</h3>
+            <p>
+                The <span>input list</span> Element is used to make an <span>input</span> field more accurate and
+                logical to
+                users and have options like <span>select</span> element but this looks like an <span>input</span> field
+                with
+                <span>autocomplete="on"</span> we have to give it options in the <span>datalist</span> element .
+            </p>
+
+            <h3><span>datalist</span> Element</h3>
+            <p>
+                The <span>datalist</span> element is an element of <span>HTML</span>,<span>Form</span> elements it
+                somehow
+                works like <span>select</span> element but it is with an <span>input</span> field to be
+                <span>selected</span>. And it has a common used attribute called <span>id</span> to relate
+                <span>input-list</span> element. It has an openeing and closing tag.
+            </p>
+            <hr>
+
+            <h3><span>fieldset</span> Element</h3>
+            <p>
+                The <span>Fieldset</span> element is use to make a <span>border</span> without using <span>border</span>
+                tag.
+                In <span>forms</span> , <span>fieldset</span> makes the user interactive feelings and make a
+                <span>form</span>
+                need and clean to visiters. and it shows the <mark>begining</mark> and <mark>ending</mark> of a form.
+            </p>
+            <hr>
+
+            <h3><span>legend</span> Element</h3>
+            <p>
+                The <mark>legend</mark> element is a child tag of <span>fieldset</span> element and makes a
+                <mark>Caption</mark> between <span>fieldset</span> to interect the user about in that body.
+            </p>
+            <hr>
+
+            <h2>HTML Input Types</h2>
+
+            <h3>input type text</h3>
+            <p title="About Text">
+                The <span>input type text</span> makes an input field, with typing type text/words ,we use it for giving
+                names like, <mark>first-name</mark> and <mark>last-name</mark>
+                <br>
+                <label for="name">Your-Name :</label>
+                <input type="text" id="name" name="username" value="Your-Name">
+            </p>
+            <hr>
+
+            <h3>input type number</h3>
+            <p title="About Number">
+                The <span>input type number</span> makes an input field and with typing type <mark>number</mark> or
+                numerics.
+                <br>
+                <label for="num">Number b/w 0-9 :</label>
+                <input type="number" id="num" name="usernumber" value="0123456789">
+            </p>
+            <hr>
+
+            <h3>input type email</h3>
+            <p title="About Email">
+                The <span>input type email</span> makes an input field and we have to type only <mark>emails</mark>
+                <br>
+                <label for="useremail">Your-Email : </label>
+                <input type="email" id="useremail" name="email" value="example@gmail.com">
+            </p>
+            <hr>
+
+            <h3>input type password</h3>
+            <p title="About Password">
+                The <span>input type password</span> makes an input field and we have to type <mark>password</mark> and
+                obviously it is not visible to all.
+                <br>
+                <label for="key">Your-password : </label>
+                <input type="password" id="key" name="userpassword" value="0000">
+            </p>
+            <hr>
+
+            <h3>input type url</h3>
+            <p title="About URL">The <span>input type url</span> makes an input field and we have to type a
+                path\location of
+                a website with characters of <mark>alphabets</mark> or <mark>numerics</mark>.
+                <span>URL</span> Stands for <mark>Uniform Resource Locator</mark>
+                <br>
+                <label for="site">Enter-URL : </label>
+                <input type="url" id="site" name="website" value="http://www.example.com">
+            </p>
+            <hr>
+
+            <h3>input type search</h3>
+            <p title="About Search">The <span>input type search</span> makes an input field and users have to write any
+                thing in text to make it search . the search type searches / locates any data which is located on the
+                web.
+                <br>
+                <label for="searchit">Search : </label>
+                <input type="search" id="searchit" name="searchweb" value="google.com">
+            </p>
+            <hr>
+
+            <h3>input type tel</h3>
+            <p title="About Tel">The <span>input type tel</span> makes an input field for any communication number in
+                the
+                globe. it is mostly used for getting phone numbers.
+                <br>
+                <label for="phone">Your-Number : </label>
+                <input type="tel" id="phone" name="usernumber" value="+920000000000">
+            </p>
+            <hr>
+
+            <h3>input type color</h3>
+            <p title="About Color">The <span>input type color</span> makes a color picker to user to choose a one
+                <mark>color</mark>.For example
+                <br>
+                <label for="color">Choose-Color :</label>
+                <input type="color" id="color" name="uicolor" value="#ffffff">
+            </p>
+
+            <h3>input type radio</h3>
+            <p title="About Radio">The <span>input type radio</span> used to making choises , there will be only one
+                choise
+                to be selected.For example
+                <br>
+                <strong>Choose-Country : </strong>
+                <input type="radio" id="pakistan" name="country" value="Pakistan">
+                <label for="pakistan">Pakistan</label>
+                <input type="radio" id="russia" name="country" value="Russia">
+                <label for="russia">Russia</label>
+                <input type="radio" id="china" name="country" value="China">
+                <label for="china">China</label>
+                <input type="radio" id="india" name="country" value="India">
+                <label for="india">India</label>
+            </p>
+            <hr>
+
+            <h3 title="ABOUT CHECKBOX">input type checkbox</h3>
+            <p title="About checkbox">The <span>input type checkbox</span> is also used in making decision in this type
+                we
+                choose multiple options which suits us.
+                <br>
+
+                <strong>Choose Food :</strong>
+
+                <input type="checkbox" id="salad" name="food" value="Salad">
+                <label for="salad">Salad</label>
+                <input type="checkbox" id="gobi" name="food" value="Gobi">
+                <label for="gobi">Gobi</label>
+                <input type="checkbox" id="biryani" name="food" value="Biryani">
+                <label for="biryani">Biryani</label>
+                <input type="checkbox" id="meat" name="food" value="Meat">
+                <label for="meat">Meat</label>
+            </p>
+
+            <h3 title="ABOUT BUTTON">Input Type Button</h3>
+            <p title="About Button">The <span>input type button</span> is used to make a button in <span>forms</span>.
+                <br>
+                <input type="button" value="click me">
+            </p>
+            <hr>
+
+            <h3 title="About input type Image">Input type Image</h3>
+            <p title="About type image">The <span>input type image</span> is very useful type , it is also used instead
+                of
+                <span>input type submit</span>
+                just we have to put an image in the <span>src</span> Attribute it works as a <mark>submit</mark>
+                button.It
+                has two important attributes
+                <span>width</span> and <span>height</span>.
+                <br>
+                <input type="image" src="button-15383.png" width="50px" height="50px">
+            </p>
+            <hr>
+
+            <h3 title="About input type time">Input Type Time</h3>
+            <p title="about time">
+                The <span>input type time</span> is a type which indicates the time in the globe. by default the time
+                attribute will make the time same as your pc's time which is running currently and we also set the time
+                manually by the <span>value</span> attribute.
+                <br>
+                <input type="time" name="time">
+            </p>
+            <hr>
+
+            <h3 title="about input time date">Input Type Date</h3>
+            <p title="about input date">The <span>input type date</span> is used to display <span>date</span> ,
+                <span>input</span> field . with this <span>type</span>
+                we <mark>wrote</mark> date from users or clients.
+                <br>
+                <input type="date" name="date">
+            </p>
+            <hr>
+
+            <h3 title="About input type datetime-local">Input type datetime-local</h3>
+            <p title="input type datetime-local">The <span>input type datetime-local</span> defines that the
+                <span>date</span> and <span>Time</span> both have to add in the form or anywhere the users have choice
+                to
+                put the <span>date & time</span> at the time.
+                <br>
+                <input type="datetime-local" name="date and time">
+            </p>
+            <hr>
+
+            <h3 title="About input type week">Input type week</h3>
+            <p title="input type week">The <span>input type week</span> Is a type of an <span>input</span> which is used
+                to
+                insert a week field on the web page , From this the users
+                can choose a week and submit the <span>form</span> or what ever. for example
+                <br>
+                <input type="week" name="week">
+            </p>
+
+            <h3 title="About Reset Type">Input Type Reset</h3>
+            <p title="input type reset">The <span>input type reset</span> is a <span>button</span> like but it is used
+                when
+                a user needs to refill the form or restart to fill the entire <span>form</span>
+                <br>
+            <form>
+                <input type="text" name="text">
+                <input type="reset">
+            </form>
+            </p>
+            <hr>
+
+            <h3 title="About input type range">Input type range</h3>
+            <p title="details of input type range">The <span>input type range</span> is used to make a digital
+                horizontally
+                moving bar we can use it make leveling numbers and muchmore,
+                <br>
+                <input type="range">
+            </p>
+            <hr>
+
+            <h3 title="about input type file">input type file</h3>
+            <p tite="input type file">The <span>input tpe file</span> is used to make <span>form</span> <mark>OS</mark>
+                functional and it is used to upload files
+                from the local computers , input type file imports files like <span>images</span> . <span>videos</span>
+                ,
+                and <span>Audios</span> to the web page.
+                <br>
+                <input type="file">
+            </p>
+            <hr>
+
+            <h3 title="About input type hidden">Input type hidden</h3>
+            <p title="input type hidden">The <span>input type hidden</span> attribute makes an input field invisible
+                temperarly it hides it from the recent place but code sits still in the background
+                <br>
+                <strong>input type hidden</strong>
+                <input type="hidden" name="hidden">
+            </p>
+            <hr>
+
+            <h3 title="About input type submit">Input type submit</h3>
+            <p title="input type submit">The <span>input type submit</span> is the main attribute of the form element it
+                is
+                used to send/or submit the form to the webserver and it has its own value <mark>submit</mark>
+                <br>
+                <input type="submit">
+            </p>
+            <hr>
+
+
+            <h2>HTML Input Attributes<h2>
+
+                    <h3 title="Value attribute">The Value Attribute</h3>
+                    <p>The <span>input value attribute</span> Specifies that an initial value for an <span>input</span>
+                        field. We use this for both <mark>methods</mark> of the <span>form</span>
+                        For example :
+                        <br>
+                        <input type="email" value="saqiiashiq@gmail.com">
+                    </p>
+                    <hr>
+
+                    <h3 title="About readonly attribute">The read only attribute</h3>
+                    <p title="attribute readonly">The <span>readonly</span> attribute is use to make an input
+                        temporarily
+                        unuseable but we can copy the text from it and mark it and it is only readable no write able.
+                        For example:
+                        <br>
+
+                        <input type="number" value="001122" readonly>
+                    </p>
+                    <hr>
+
+                    <h3>The Disabled attribute</h3>
+                    <p>The <span>disabled</p> attribute is used to make an <span>input</span> field perminantly shutdown
+                    it
+                    is visible but it will no longer avail to work its become dead in the page .
+                    <br>
+
+                    <input type="button" value="click" disabled>
+                    </p>
+                    <hr>
+
+                    <h3> The size attribute</h3>
+                    <p>The <span>input size attribute</span> is use to make an <span>input</span> field long in visible
+                        the
+                        <span>value</span> is given in the numbers and the maximum numbers are given the text will be
+                        visible in the field
+                        <br>
+                        <input type="text" value="salamat noor" size="12" placeholder="12 size">
+                    </p>
+
+                    <h3>The autofocus attribute</h3>
+                    <p title="input attribute ( autofocus )">The <span>input autofocus attribute</span> is used to make
+                        an
+                        <span> input </span>field blinked normally in visible to users it is useful when we dont need
+                        the
+                        <mark>mouse cursor</mark> again.
+                    </p>
+
+                    <h3>Input pattern attribute</h3>
+                    <p>The <span>input pattern</span> attribute specifies a regular expression that the input field's
+                        value is checked against, when the form is submitted.
+                        The <span>pattern</span> attribute works with the following input types: <br> <span>text,</span>
+                        <br> <span>date,</span> <br> <span>search,</span> <br> <span>url,</span> <br> <span>tel,</span>
+                        <br> <span>email,<br> <span>password</span>.
+                            <form>
+                                <label for="country_code">Country code:</label>
+                                <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"
+                                    title="Three letter country code">
+                            </form>
+                    </p>
+                    <hr>
+
+                    <h3>min & max Attribute</h3>
+                    <p>The <span>min max</span> attribute is use to set the limitations in the input field
+                        The min and max attributes work with the following input types: <br> <span>number,</span> <br>
+                        <span>range,</span> <br> <span>date,</span> <br> <span>datetime-local,</span> <br>
+                        <span>month,<span> <br> <span>time</span> <br> <span>week</span>
+
+                                <form>
+                                    <label for="datemax">Enter a date before 1980-01-01:</label>
+                                    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+                                    <label for="datemin">Enter a date after 2000-01-01:</label>
+                                    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+                                    <label for="quantity">Quantity (between 1 and 5):</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                                </form>
+                    </p>
+                    <hr>
+
+                    <h3>maxlength attribute</h3>
+                    <p>The <span>maxlength</span> attribute is use to specify the maximum number of characters allowed
+                        in the <span>input</span> field.
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" size="50"><br>
+                        <label for="pin">PIN:</label><br>
+                        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+                    </form>
+                    </p>
+                    <hr>
+
+                    <h3>required attribute</h3>
+                    <p>The <span>required</span> attribute is used to validate that field in the form,The input required
+                        attribute specifies that an input field must be filled out before submitting the form.
+                        The required attribute works with the following input types: <br> <span>text,</span> <br>
+                        <span>search,</span> <br> <span>url,</span> <br> <span>tel,</span> <br> <span>email,</span> <br>
+                        <span>password,</span> <br> <span>date pickers,</span> <br> <span>number,</span> <br>
+                        <span>checkbox,</span> <br> <span>radio,</span> <br> <span>file.</span>
+                    <form id="form33">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </form>
+                    <input type="submit" form="form33">
+                    </p>
+                    <hr>
+
+                    <h3>step attribute</h3>
+                    <p>The <span>step</span> attribute is used to make a validate of given value, it is simply used to
+                        make multiples of the given value in numbers it makes the multiple of the given value.
+                        <mark> This attribute can be used together with the max and min attributes to create a range of
+                            legal values.</mark>
+                    <form>
+                        <label for="points">Points:</label>
+                        <input type="number" id="points" name="points" step="3">
+                    </form>
+                    </p>
+                    <hr>
+
+                    <h3>width & height attribute</h3>
+                    <p>The <span>width</span> & <span>height</span> attribute is used when
+                        The <mark>input height and width</mark> attributes specify the <span>height</span> and
+                        <span>width</span> of an <mark>
+                            < input type=" image ">
+                        </mark> element.
+
+                    <form>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="image" src="./button-15383.png" alt="Submit" width="48" height="48">
+                    </form>
+                    </p>
+                    <hr>
+
+                    <h3>placeholder attribute</h3>
+                    <p>The <span>placeholder</span> attribute is used when we have to give a hint behind the
+                        <span>input</span> field.
+                        The input placeholder attribute specifies a short hint that describes the expected value of an
+                        input field (a sample value or a short description of the expected format).
+                        The short hint is displayed in the input field before the user enters a value.
+                        The placeholder attribute works with the following input types: <br> <span>text,</span> <br>
+                        <span>search,</span> <br> <span>url,</span> <br> <span>tel,</span> <br> <span>email,</span> <br>
+                        <span>password.</span>
+
+                    </p>
+                    <hr>
+
+                    <h3>multiple attribute</h3>
+                    <p>The <span>multiple</span> attribute is used when we need two or more files to add in the form.
+                        the <span>multiple</span> attribute works with the following <span>input</span> types.
+                        <br> <span>file</span> <br> <span>email</span> <br>
+                    <form>
+                        <label for="files">Select files:</label>
+                        <input type="file" id="files" name="files" multiple>
+                    </form>
+                    </p>
+                    <hr>
+
+                    <h3>selected attribute</h3>
+                    <p>the <span>selected</span> attribute is used to select default values in the <span>select</span>
+                        <span>options</span> elements. we can select one or more options in the dropdown element.
+                    </p>
+                    <hr>
+
+                    <h3>checked attribute</h3>
+                    <p>It is an attribute of <span>checkbox</span> <mark>input type</mark> it is use to select default
+                        values in the form it is also used in <span>input type radio</span>
+                    </p>
+                    <hr>
+
+                    <h3>input list attribute</h3>
+                    <p>The <span>input list </span> element or attribute is use to make a dropdown it is like
+                        <span>select</span> element but not completly like <span>select</span> element.
+                        The input list attribute refers to a <mark>
+                            < datalist>
+                        </mark> element that contains pre-defined options for an <span>
+                            < input>
+                        </span> element.
+
+                    <form>
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </form>
+                    </p>
+                    <hr>
+
+                    <h3>Input type attribute</h3>
+                    <p>The <span> input type </span> attribute is used to make a type of an input field it is most
+                        common used attribue in input element every input element has an type attribute to define the
+                        input element. </p>
+    </fieldset>
+</body>
+
+</html>
